@@ -18,24 +18,23 @@ const IndexPage = ({data}) => {
     productos.push(edge.node)
   ))
 
-  // Accepts the array and key
-const groupBy = (array, key) => {
-  // Return the end result
+  // acepta un array y una key
+const ordenarPor = (array, key) => {
+  // devolver el resultado final
   return array.reduce((result, currentValue) => {
-    // If an array already present for key, push it to the array. Else create an array and push the object
+    // si hay un array para la key pushearlo para el array, si no lo hay crear uno nuevo y pushearlo
     (result[currentValue[key]] = result[currentValue[key]] || []).push(
       currentValue
     );
-    // Return the current iteration `result` value, this will be taken as next iteration `result` value and accumulate
+    // devolver el resultado actual que va a ser tomado como el siguiente actual y acumulado
     return result;
-  }, []); // empty object is the initial value for result object
+  }, []); // un array vacio es el valor inicial para el array que resulta
 };
 
-// Group by color as key to the person array
-const categorias = groupBy(productos, 'categoria');
+// agrupar por categoria el array de productos
+const categorias = ordenarPor(productos, 'categoria');
 
 console.log(categorias)
-
   return (
 
     <Layout>

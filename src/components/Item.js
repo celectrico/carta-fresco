@@ -2,7 +2,7 @@ import React from "react";
 
 const Item = (props) => {
     return (
-        <div>
+        <div className="m-2"> 
             <div>
                 <span>{props.nombre}</span>
             </div>

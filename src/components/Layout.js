@@ -1,6 +1,5 @@
 import React from "react";
 import { useStaticQuery, graphql } from 'gatsby'
-import './layout.css';
 
 
 
@@ -17,7 +16,7 @@ const Layout = ({children}) => {
     `)
 
     return (
-        <div>
+        <div className="h-screen flex bg-gray-300 relative">
             <title>{data.site.siteMetadata.title}</title>
             {children}
         </div>

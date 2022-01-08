@@ -1,9 +1,12 @@
 import React from "react"
 import Layout from "../components/Layout"
-import { graphql } from 'gatsby'
-import MainContent from "../components/MainContent";
+import { graphql } from 'gatsby';
 import Section from "../components/Section";
 import Item from "../components/Item";
+import NavBar from "../components/NavBar";
+import MainContent from "../components/MainContent";
+import Footer from "../components/Footer";
+import TopBtn from "../components/TopBtn";
 
 // markup
 const IndexPage = ({data}) => {
@@ -34,14 +37,24 @@ const ordenarPor = (array, key) => {
 // agrupar por categoria el array de productos
 const categorias = ordenarPor(productos, 'categoria');
 
+
+const keys = Object.keys(categorias).map((key) => {
+  return (
+    key
+  )
+})
+
+console.log(keys)
+
 console.log(categorias)
   return (
 
     <Layout>
+      <NavBar />
       <MainContent>
         {Object.keys(categorias).map((key) => {
           return (
-            <Section categoria={key}>
+            <Section categoria={key} id={key}>
               {categorias[key].map(item => (
                 <Item nombre={item.item} traduccion={item.traduccion} precio={item.precio} />
               ))}
@@ -49,6 +62,8 @@ console.log(categorias)
           )
         })}
       </MainContent>
+      <TopBtn />
+      <Footer />
     </Layout>
   )
 }

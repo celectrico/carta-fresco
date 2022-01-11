@@ -16,7 +16,7 @@ const Layout = ({children}) => {
     `)
 
     return (
-        <div className="h-screen flex bg-white relative bg-black">
+        <div className="h-screen flex bg-white relative bg-black overscroll-auto">
             <title>{data.site.siteMetadata.title}</title>
             {children}
         </div>

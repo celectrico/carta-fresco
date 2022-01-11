@@ -7,6 +7,9 @@ module.exports = {
       colors: {
         frescoBlue: '#1597E5',
         frescoOrange: '#F14A16',
+      },
+      fontFamily: {
+        'sans': ['Cocomat', 'Helvetica', 'Arial', 'sans-serif']
       }
     },
   },

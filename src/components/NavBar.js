@@ -9,7 +9,7 @@ const NavBar = () => {
 
     return (
 
-        <div className=" h-8 fixed bottom-0 left-0 right-0 bg-white" id='nav-bar'>
+        <div className="p-2 h-10 fixed bottom-0 left-0 right-0 bg-white" id='nav-bar'>
             <div className="flex flex-row justify-evenly">
             <AnchorLink to="/#CERVEZAS - BEERS">
                 <NavBarIcon icon={ <IoPintSharp size='28' />} />

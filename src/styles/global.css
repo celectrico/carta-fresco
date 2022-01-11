@@ -2,16 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html, 
-body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-y: hidden;
-    overscroll-behavior: auto;
-}
-
 @font-face {
     font-family: 'Cocomat';
     src: local('Cocomat'), url(src/fonts/Cocomat-Light-trial.ttf) format('ttf');

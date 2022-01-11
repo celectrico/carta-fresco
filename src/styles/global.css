@@ -1,8 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@font-face {
-    font-family: 'Cocomat';
-    src: local('Cocomat'), url(src/fonts/Cocomat-Light-trial.ttf) format('ttf');
-  }

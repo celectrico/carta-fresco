@@ -16,7 +16,7 @@ const Layout = ({children}) => {
     `)
 
     return (
-        <div className="w-screen h-screen flex relative bg-white">
+        <div className="w-screen h-screen flex relative bg-gradient-to-b from-black">
             <title>{data.site.siteMetadata.title}</title>
             {children}
         </div>

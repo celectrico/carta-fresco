@@ -7,6 +7,7 @@ import NavBar from "../components/NavBar";
 import MainContent from "../components/MainContent";
 import TopBtn from "../components/TopBtn";
 import Hero from "../components/Hero";
+import Recuadro from "../components/Recuadro";
 
 // markup
 const IndexPage = ({data}) => {
@@ -50,6 +51,7 @@ console.log(categorias)
   return (
 
     <Layout>
+      <Recuadro />
       <Hero />
       <MainContent>
         {Object.keys(categorias).map((key) => {

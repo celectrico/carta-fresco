@@ -4,7 +4,7 @@ import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 const TopBtn = () => {
     return (
-        <div className="fixed bottom-16 right-0 m-3">
+        <div className="fixed bottom-16 right-0 m-3 z-40">
             <AnchorLink to="/#nav-bar">
                 <TopIcon icon={ <BsFillArrowUpSquareFill size='28' /> } />
             </AnchorLink>

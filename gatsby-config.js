@@ -15,8 +15,13 @@ module.exports = {
         spaceId: process.env.SPACE_ID,
       },
     },
+    {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -100,
+      },
+    },
     "gatsby-plugin-postcss",
     `gatsby-plugin-image`,
-    'gatsby-plugin-anchor-links',
   ],
 };

@@ -8,11 +8,24 @@ import MainContent from "../components/MainContent";
 import TopBtn from "../components/TopBtn";
 import Hero from "../components/Hero";
 import Recuadro from "../components/Recuadro";
+import Logo from "../components/Logo";
+import Contacto from "../components/Contacto";
 
 // markup
 const IndexPage = ({data}) => {
   
   const edges = data.allContentfulProducto.edges;
+
+  const datos = data.allContentfulDatos.edges;
+
+  const datosArr = [];
+
+  datos.map((dato) => (
+    datosArr.push(dato.node.texto)
+  ))
+
+  console.log(datos)
+  console.log(datosArr)
 
   const productos = [];
 
@@ -51,6 +64,7 @@ console.log(categorias)
   return (
 
     <Layout>
+      <Logo />
       <Recuadro />
       <Hero />
       <MainContent>
@@ -63,6 +77,13 @@ console.log(categorias)
             </Section>
           )
         })}
+        <Contacto>
+          {datosArr.map((dato) => {
+            return (
+              <span className="text-left">{dato}</span>
+            )
+          })}
+        </Contacto>
       </MainContent>
       <TopBtn />
       <NavBar />
@@ -83,6 +104,13 @@ export const query = graphql`
           descripcion
           descripcionTraducida
           precio
+        }
+      }
+    }
+    allContentfulDatos {
+      edges {
+        node {
+          texto
         }
       }
     }

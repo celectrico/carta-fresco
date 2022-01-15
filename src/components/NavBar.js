@@ -11,16 +11,16 @@ const NavBar = () => {
 
         <div className="p-2 h-10 fixed bottom-0 left-0 right-0 bg-white z-40" id='nav-bar'>
             <div className="flex flex-row justify-evenly">
-            <AnchorLink to="/#Nuestras Cervezas - Our Beers">
+            <AnchorLink to="#Nuestras Cervezas - Our Beers">
                 <NavBarIcon icon={ <IoPintSharp size='28' />} />
             </AnchorLink>
-            <AnchorLink to="/#BEBIDAS - DRINKS">
+            <AnchorLink to="#Bebidas - Drinks">
                 <NavBarIcon icon={ <BiDrink size='28' />} />
             </AnchorLink>
-            <AnchorLink to="/#COMIDAS">
+            <AnchorLink to="#Comida - Food">
                 <NavBarIcon icon={ <FaHamburger size='28' />} />
             </AnchorLink>
-            <AnchorLink to="/#contacto">
+            <AnchorLink to="#contacto">
                 <NavBarIcon icon={ <IoIosContacts size='28' />} />
             </AnchorLink>
             </div>

@@ -1,11 +1,10 @@
 import React from "react";
-import { GiFoxHead } from 'react-icons/gi';
+import Something from "../svgs/zorro-blanco.svg";
+
 
 const Logo = () => {
     return (
-        <div className="fixed top-0 left-0 m-3 z-50">
-            <div><GiFoxHead size='28' color='white' /></div>
-        </div>
+        <Something className='h-10 w-10 z-50 fixed top-0 left-0 m-4' />
     )
 };
 

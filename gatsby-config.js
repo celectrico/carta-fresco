@@ -21,6 +21,14 @@ module.exports = {
         offset: -100,
       },
     },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /svgs/
+        }
+      }
+    },
     "gatsby-plugin-postcss",
     `gatsby-plugin-image`,
   ],

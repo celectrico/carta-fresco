@@ -80,7 +80,7 @@ console.log(categorias)
         <Contacto>
           {datosArr.map((dato) => {
             return (
-              <span className="text-left">{dato}</span>
+              <span className="text-left m-2 border-b-2">{dato}</span>
             )
           })}
         </Contacto>

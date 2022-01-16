@@ -2,8 +2,10 @@ import React from "react";
 
 const Footer = () => {
     return (
-        <div class="absolute inset-x-0 bottom-0 h-16 bg-gray-50 flex justify-center items-center">
-            Copirigth frescobar
+        <div className="absolute bottom-0 left-0 text-center w-11/12 h-24 bg-white mt-2 pr-1 pl-1 pt-2 rounded-md shadow-md" >
+            <div className="flex justify-center w-full p-1">
+                <span>FRESCO BAR © {new Date().getFullYear()}</span>
+            </div>
         </div>
     )
 }

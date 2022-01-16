@@ -10,6 +10,7 @@ import Hero from "../components/Hero";
 import Recuadro from "../components/Recuadro";
 import Logo from "../components/Logo";
 import Contacto from "../components/Contacto";
+import Footer from "../components/Footer"
 
 // markup
 const IndexPage = ({data}) => {
@@ -72,7 +73,7 @@ console.log(categorias)
           return (
             <Section categoria={key} id={key}>
               {categorias[key].map(item => (
-                <Item nombre={item.item} traduccion={item.traduccion} precio={item.precio} />
+                <Item nombre={item.item} descripcion={item.descripcion} traduccion={item.traduccion} descripcionTraducida={item.descripcionTraducida} precio={item.precio} />
               ))}
             </Section>
           )
@@ -85,8 +86,9 @@ console.log(categorias)
           })}
         </Contacto>
       </MainContent>
-      <TopBtn />
+      <Footer />
       <NavBar />
+      <TopBtn />
     </Layout>
   )
 }

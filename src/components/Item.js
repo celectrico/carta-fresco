@@ -6,6 +6,8 @@ const Item = (props) => {
             <div className="flex flex-col">
                 <span className="text-left">{props.nombre}</span>
                 <span className="text-left italic text-gray-800">{props.traduccion}</span>
+                <span className="text-left italic text-gray-800">{props.descripcion}</span>
+                <span className="text-left italic text-gray-800">{props.descripcionTraducida}</span>
             </div>
             <div>
                 <span className="text-rigth">${props.precio}</span>

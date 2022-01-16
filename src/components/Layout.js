@@ -1,6 +1,10 @@
 import React from "react";
 import { useStaticQuery, graphql } from 'gatsby'
 
+// if (typeof window !== "undefined") {
+    // eslint-disable-next-line global-require
+//    require("smooth-scroll")('a[href*="#"]', {offset: -70})
+//  }
 
 
 const Layout = ({children}) => {
@@ -16,10 +20,10 @@ const Layout = ({children}) => {
     `)
 
     return (
-        <div className="w-screen h-screen flex relative bg-gradient-to-b from-black">
+        <main className="w-screen h-full flex flex-col relative bg-gradient-to-b from-black">
             <title>{data.site.siteMetadata.title}</title>
             {children}
-        </div>
+        </main>
     )
 }
 

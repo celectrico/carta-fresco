@@ -3,26 +3,25 @@ import { IoPintSharp } from 'react-icons/io5';
 import { BiDrink } from 'react-icons/bi';
 import { FaHamburger } from 'react-icons/fa';
 import { IoIosContacts } from 'react-icons/io';
-import { AnchorLink } from "gatsby-plugin-anchor-links";
+import { Link } from "react-scroll";
 
 const NavBar = () => {  
-
     return (
 
-        <div className="p-2 h-10 fixed bottom-0 left-0 right-0 bg-white z-40" id='nav-bar'>
+        <div className="p-2 h-10 sticky bottom-0 left-0 right-0 bg-white z-40" id='nav-bar'>
             <div className="flex flex-row justify-evenly">
-            <AnchorLink to="#Nuestras Cervezas - Our Beers">
+            <Link to="Nuestras Cervezas - Our Beers" offset={-70}>
                 <NavBarIcon icon={ <IoPintSharp size='28' />} />
-            </AnchorLink>
-            <AnchorLink to="#Bebidas - Drinks">
+            </Link>
+            <Link to="Bebidas - Drinks" offset={-70}>
                 <NavBarIcon icon={ <BiDrink size='28' />} />
-            </AnchorLink>
-            <AnchorLink to="#Comida - Food">
+            </Link>
+            <Link to="Comida - Food" offset={-70}>
                 <NavBarIcon icon={ <FaHamburger size='28' />} />
-            </AnchorLink>
-            <AnchorLink to="#contacto">
+            </Link>
+            <Link to="contacto" offset={-70}>
                 <NavBarIcon icon={ <IoIosContacts size='28' />} />
-            </AnchorLink>
+            </Link>
             </div>
         </div>
     )

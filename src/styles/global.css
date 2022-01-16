@@ -3,7 +3,14 @@
     font-family: Cocomat;
     src: local("cocomat-ligth-trial-webfont"), url(../fonts/cocomat-light-trial-webfont.ttf);
 }
+
+html, body {
+    scroll-behavior: smooth;
+    scroll-snap-align: center;
+}
+
   
+
 
 @tailwind base;
 @tailwind components;

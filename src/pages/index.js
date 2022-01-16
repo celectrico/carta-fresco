@@ -102,7 +102,6 @@ export const query = graphql`
         node {
           categoria
           item
-          traduccion
           descripcion
           descripcionTraducida
           precio

@@ -8,7 +8,7 @@ import { Link } from "react-scroll";
 const NavBar = () => {  
     return (
 
-        <div className="p-2 h-10 sticky bottom-0 left-0 right-0 bg-white z-40" id='nav-bar'>
+        <div className="w-full p-2 h-10 sticky bottom-0 left-0 right-0 bg-white z-40" id='nav-bar'>
             <div className="flex flex-row justify-evenly">
             <Link smooth={true} to="Nuestras Cervezas - Our Beers" offset={-70}>
                 <NavBarIcon icon={ <IoPintSharp size='28' />} />

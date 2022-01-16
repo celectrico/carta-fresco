@@ -20,7 +20,7 @@ const Layout = ({children}) => {
     `)
 
     return (
-        <main className="w-screen h-full flex flex-col relative bg-gradient-to-b from-black">
+        <main className="w-screen h-full flex flex-col items-center relative bg-gradient-to-b from-black">
             <title>{data.site.siteMetadata.title}</title>
             {children}
         </main>
